@@ -123,7 +123,7 @@
         </div>
 
       </div>
-      
+
       <section class="wrap-main">
 
       <div class="chat-header">
@@ -143,7 +143,26 @@
         </div>
       </div>
       <div class="main-chat">
-
+        <div class="msg-row flex">
+          <div class="msg user-msg">
+            <p class="testo-msg">questo è un messaggio</p>
+            <p class="ora-msg">17:30</p>
+          </div>
+        </div>
+        <div class="msg-row flex">
+          <div class="msg cpu-msg">
+            <p class="testo-msg">questo è un messaggio</p>
+            <p class="ora-msg">17:30</p>
+          </div>
+        </div>
+        <div class="msg-structure">
+          <div class="msg-row flex">
+            <div class="msg user-msg">
+              <p class="testo-msg">questo è un messaggio</p>
+              <p class="ora-msg">17:30</p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="footer-chat">
         <div class="emoticons">
@@ -151,13 +170,14 @@
           </div>
           <input type="text" id="msg-input" placeholder="Scrivi un messaggio">
           <div class="invia-btn">
-            <a href="#"><i class="fas fa-paper-plane"></i></a>
+            <a id="invia" href="#"><i class="fas fa-paper-plane"></i></a>
           </div>
       </div>
     </section>
 
     </div>
   </div>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
