@@ -6,6 +6,9 @@
  .flex {
    display: flex;
  }
+ .nav {
+   height: 75px;
+ }
 .debug {
   border: 1px solid red;
   background-color: red;
@@ -47,7 +50,9 @@
 -moz-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
 box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
 }
+
 .side-nav {
+  float: left;
   width: 30%;
   height: 100%
 
@@ -55,9 +60,8 @@ box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
 
 .icons {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
-  margin-left: 220px;
+  margin-left: auto;
 
 
 }
@@ -114,4 +118,76 @@ margin-bottom: 5px;
   content: "17:53";
   font-size: 12px;
   margin-left: 100%
+}
+.wrap-main {
+  float: left;
+  width: 70%;
+  height: 100%;
+}
+.chat-header{
+  width: 100%;
+
+}
+.head-chat {
+  height: 75px;
+  background-color: #ededed;
+}
+
+.avatar-chat {
+  display: flex;
+  width: 40px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.name {
+  flex-direction: column;
+  justify-content: center;
+}
+.utility {
+  display: flex;
+  align-items: center;
+  margin-left: auto;;
+
+}
+.utility ul {
+display: flex;
+justify-content: center;
+list-style: none;
+
+
+}
+.utility ul li {
+  display: flex;
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+.main-chat {
+  width: 100%;
+  height: calc(100% - 145px);
+  background-image: url('../img/mine.jpg');
+}
+.footer-chat {
+  display: flex;
+align-items: center;
+height: 70px;
+padding: 10px;
+}
+.emoticons {
+  display: flex;
+justify-content: center;
+width: 120px;
+}
+#msg-input {
+  width: 100%;
+height: 100%;
+padding: 0 15px;
+border: none;
+border-radius: 5px;
+}
+.invia-btn {
+  display: flex;
+justify-content: center;
+width: 120px;
 }
