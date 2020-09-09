@@ -3,12 +3,14 @@
  box-sizing: border-box;
  margin: 0;
  padding: 0;
+ font-family: 'Roboto', sans-serif;
  }
  .flex {
    display: flex;
  }
  .nav {
    height: 75px;
+   background-color: #ededed;
  }
 .debug {
   border: 1px solid red;
@@ -83,14 +85,36 @@ list-style: none;
   cursor: pointer;
 }
 .alert-blue {
-  background-color: blue;
+  background-color: #9de1fe;
   height: 80px;
+  cursor: pointer;
+}
+.alert-blue:hover .alert-inside a {
+  text-decoration: underline;
+}
+.notification {
+ display: flex;
+ align-self: center;
+ font-size: 35px;
+ margin-left: 10px;
+   background-color: #fff;
+   border-radius: 50%;
+}
+.notification span i {
+  padding: 10px 10px;
+  color: #9de1fe;
+
 }
 .alert-inside {
   margin-top: 15px;
+  margin-left: 10px;
 }
-.alert-inside h3 {
+.alert-inside p {
 margin-bottom: 5px;
+}
+.alert-inside a {
+  text-decoration: none;
+  color: #000;
 }
 .searchbar {
 width: 100%;
@@ -144,7 +168,8 @@ margin-bottom: 5px;
 
 .avatar-chat {
   display: flex;
-  width: 40px;
+  height: 55px;
+  width: 55px;
   margin: 10px;
   border-radius: 50%;
 }

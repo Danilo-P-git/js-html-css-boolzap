@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title></title>
@@ -26,10 +27,12 @@
         </nav>
 
         <div class="alert-blue flex">
-          <img class="avatar" src="img\avatar_1.jpg" alt="">
+          <div class="notification">
+            <span> <i class="fas fa-bell-slash"></i></span>
+          </div>
           <div class="alert-inside">
-            <h3>Ricevi notifiche di nuovi messaggi</h3>
-            <a href="#">Attiva notifiche dekstop</a>
+            <p>Ricevi notifiche di nuovi messaggi</p>
+            <a href="#">Attiva notifiche dekstop <i class="fas fa-angle-right"></i></a>
           </div>
         </div>
 
@@ -155,9 +158,18 @@
             <p class="ora-msg">17:30</p>
           </div>
         </div>
+
         <div class="msg-structure">
-          <div class="msg-row flex">
+          <div class="msg-row user flex">
             <div class="msg user-msg">
+              <p class="testo-msg">questo è un messaggio</p>
+              <p class="ora-msg">17:30</p>
+            </div>
+          </div>
+        </div>
+        <div class="msg-structure">
+          <div class="msg-row cpu  flex">
+            <div class="msg cpu-msg">
               <p class="testo-msg">questo è un messaggio</p>
               <p class="ora-msg">17:30</p>
             </div>
