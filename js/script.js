@@ -51,6 +51,14 @@ $(document).ready(function() {
   });
 
 
+  $(".search").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $(".chat").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+
+
 function messaggioInviato() {
   var valoreInserito = $("#msg-input").val();
   var messaggioInterno = $(".msg-structure .user").clone();
