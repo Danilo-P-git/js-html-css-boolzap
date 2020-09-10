@@ -41,6 +41,7 @@ $(document).ready(function() {
         var hours = date.getHours();
         var minutes = date.getMinutes();
         var time = hours + ":" + minutes;
+        var index
         if (valoreInserito !="") {
           messaggioInterno.find(".testo-msg").text(valoreInserito);
             messaggioInterno.find(".ora-msg").text(time);
