@@ -183,8 +183,11 @@ margin-bottom: 5px;
 .head-chat {
   height: 75px;
   background-color: #ededed;
+  display: none
 }
-
+.active-head {
+  display: flex;
+}
 .avatar-chat {
   display: flex;
   height: 55px;

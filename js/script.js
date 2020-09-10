@@ -58,6 +58,27 @@ $(document).ready(function() {
       });
     });
 
+  $(".chat").click(function() {
+    $(".chat").removeClass("active-chat");
+    $(this).addClass("active-chat");
+
+    var indexChat = $(this).index();
+
+    $(".main-chat").each(function() {
+      $(this).removeClass("active");
+    });
+    $(".main-chat").eq(indexChat).addClass("active");
+
+    $(".head-chat").each(function() {
+      $(this).removeClass("active-head");
+    });
+    $(".head-chat").eq(indexChat).addClass("active-head");
+  })
+
+
+
+
+
 
 function messaggioInviato() {
   var valoreInserito = $("#msg-input").val();
