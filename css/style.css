@@ -316,3 +316,27 @@ border-radius: 5px;
 justify-content: center;
 width: 120px;
 }
+
+.dropdown {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 200px;
+  display: none;
+
+}
+.dropdown ul {
+  list-style: none;
+  background-color: #fff;
+  padding: 10px 20px;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+}
+.dropdown ul li {
+  padding-top: 5px;
+  cursor: pointer;
+}
+.dropdown ul li:last-child {
+  padding-top: 10px;
+}

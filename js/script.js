@@ -76,8 +76,14 @@ $(document).ready(function() {
     $(".head-chat").eq(indexChat).addClass("active-head");
   })
 
+  $(".utility-msg").click(function() {
+    $(this).siblings('.dropdown').toggle();
 
-
+  })
+  $(".dropdown").on("click", ".delete",
+    function () {
+      $(this).parents(".messaggio").remove();
+  });
 
 
 
