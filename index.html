@@ -20,8 +20,8 @@
           <div class="icons">
             <ul>
               <li><i class="fas fa-circle-notch"></i></li>
-              <li><i class="fas fa-circle-notch"></i></li>
-              <li><i class="fas fa-circle-notch"></i></li>
+              <li><i class="fas fa-comment-alt"></i></li>
+              <li><i class="fas fa-ellipsis-v"></i></li>
             </ul>
           </div>
         </nav>
@@ -32,7 +32,7 @@
           </div>
           <div class="alert-inside">
             <p>Ricevi notifiche di nuovi messaggi</p>
-            <a href="#">Attiva notifiche dekstop <i class="fas fa-angle-right"></i></a>
+            <a href="#">Attiva notifiche dekstop</a>
           </div>
         </div>
 
@@ -45,68 +45,68 @@
 
         <div class="wrapper-chat">
 
-          <div class="chat flex">
+          <div class="chat flex active-chat" data-contatto="0">
             <img class="avatar" src="img\avatar_1.jpg" alt="">
             <div class="name-chat">
               <p class="orario-chat">17:53</p>
-              <h2>Michele</h2>
-              <p>Non poteva essere altrimenti</p>
+              <p class="name-style">Michele</p>
+              <p class="chat-style">Non poteva essere altrimenti</p>
             </div>
           </div>
-          <div class="chat flex">
+          <div class="chat flex" data-contatto="1">
             <img class="avatar" src="img\avatar_2.jpg" alt="">
             <div class="name-chat">
               <p class="orario-chat">17:53</p>
-              <h2>Fabio</h2>
-              <p>Non poteva essere altrimenti</p>
+              <p class="name-style">Fabio</p>
+              <p class="chat-style">Non poteva essere altrimenti</p>
             </div>
           </div>
-          <div class="chat flex">
+          <div class="chat flex" data-contatto="2">
             <img class="avatar" src="img\avatar_3.jpg" alt="">
             <div class="name-chat">
               <p class="orario-chat">17:53</p>
-              <h2>Samuele</h2>
-              <p>Non poteva essere altrimenti</p>
+              <p class="name-style">Samuele</p>
+              <p class="chat-style">Non poteva essere altrimenti</p>
             </div>
           </div>
-          <div class="chat flex">
+          <div class="chat flex" data-contatto="3">
             <img class="avatar" src="img\avatar_4.jpg" alt="">
             <div class="name-chat">
               <p class="orario-chat">17:53</p>
-              <h2>Alessandro B.</h2>
-              <p>Non poteva essere altrimenti</p>
+              <p class="name-style">Alessandro B.</p>
+              <p class="chat-style">Non poteva essere altrimenti</p>
             </div>
           </div>
-          <div class="chat flex">
+          <div class="chat flex" data-contatto="4">
             <img class="avatar" src="img\avatar_5.jpg" alt="">
             <div class="name-chat">
               <p class="orario-chat">17:53</p>
-              <h2>Alessandro L.</h2>
-              <p>Non poteva essere altrimenti</p>
+              <p class="name-style">Alessandro L.</p>
+              <p class="chat-style">Non poteva essere altrimenti</p>
             </div>
           </div>
-          <div class="chat flex">
+          <div class="chat flex" data-contatto="5">
             <img class="avatar" src="img\avatar_6.jpg" alt="">
             <div class="name-chat">
               <p class="orario-chat">17:53</p>
-              <h2>Claudia</h2>
-              <p>Non poteva essere altrimenti</p>
+              <p class="name-style">Claudia</p>
+              <p class="chat-style">Non poteva essere altrimenti</p>
             </div>
           </div>
-          <div class="chat flex">
+          <div class="chat flex" data-contatto="6">
             <img class="avatar" src="img\avatar_7.jpg" alt="">
             <div class="name-chat">
               <p class="orario-chat">17:53</p>
-              <h2>Davide</h2>
-              <p>Non poteva essere altrimenti</p>
+              <p class="name-style">Davide</p>
+              <p class="chat-style">Non poteva essere altrimenti</p>
             </div>
           </div>
-          <div class="chat flex">
+          <div class="chat flex" data-contatto="7">
             <img class="avatar" src="img\avatar_8.jpg" alt="">
             <div class="name-chat">
               <p class="orario-chat">17:53</p>
-              <h2>Federico</h2>
-              <p>Non poteva essere altrimenti</p>
+              <p class="name-style">Federico</p>
+              <p class="chat-style">Non poteva essere altrimenti</p>
             </div>
           </div>
 
@@ -119,7 +119,7 @@
 
       <div class="chat-header">
         <div class="head-chat flex">
-          <img class="avatar-chat" src="img/avatar_io.jpg" alt="">
+          <img class="avatar-chat" src="img/avatar_1.jpg" alt="">
           <div class="name flex">
             <h3>Michele</h3>
             <p>Ultimo accesso alle</p>
@@ -127,21 +127,25 @@
           <div class="utility">
             <ul>
               <li><i class="fas fa-search"></i></li>
-              <li><i class="fas fa-search"></i></li>
-              <li><i class="fas fa-search"></i></li>
+              <li><i class="fas fa-paperclip"></i></li>
+              <li><i class="fas fa-ellipsis-v"></i></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="main-chat">
+
+
+      <div class="main-chat active" data-contatto="0">
         <div class="msg-row flex">
           <div class="msg user-msg">
+            <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
             <p class="testo-msg">questo è un messaggio</p>
             <p class="ora-msg">17:30</p>
           </div>
         </div>
         <div class="msg-row flex">
           <div class="msg cpu-msg">
+            <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
             <p class="testo-msg">questo è un messaggio</p>
             <p class="ora-msg">17:30</p>
           </div>
@@ -150,6 +154,7 @@
         <div class="msg-structure">
           <div class="msg-row user flex">
             <div class="msg user-msg">
+              <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
               <p class="testo-msg">questo è un messaggio</p>
               <p class="ora-msg">17:30</p>
             </div>
@@ -158,12 +163,269 @@
         <div class="msg-structure">
           <div class="msg-row cpu  flex">
             <div class="msg cpu-msg">
+              <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
               <p class="testo-msg">questo è un messaggio</p>
               <p class="ora-msg">17:30</p>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="main-chat" data-contatto="1">
+        <div class="msg-row flex">
+          <div class="msg user-msg">
+            <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+            <p class="testo-msg">questo è un messaggio</p>
+            <p class="ora-msg">17:30</p>
+          </div>
+        </div>
+        <div class="msg-row flex">
+          <div class="msg cpu-msg">
+            <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+            <p class="testo-msg">questo è un messaggio</p>
+            <p class="ora-msg">17:30</p>
+          </div>
+        </div>
+
+        <div class="msg-structure">
+          <div class="msg-row user flex">
+            <div class="msg user-msg">
+              <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+              <p class="testo-msg">questo è un messaggio</p>
+              <p class="ora-msg">17:30</p>
+            </div>
+          </div>
+        </div>
+        <div class="msg-structure">
+          <div class="msg-row cpu  flex">
+            <div class="msg cpu-msg">
+              <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+              <p class="testo-msg">questo è un messaggio</p>
+              <p class="ora-msg">17:30</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-chat" data-contatto="2">
+        <div class="msg-row flex">
+          <div class="msg user-msg">
+            <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+            <p class="testo-msg">questo è un messaggio</p>
+            <p class="ora-msg">17:30</p>
+          </div>
+        </div>
+        <div class="msg-row flex">
+          <div class="msg cpu-msg">
+            <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+            <p class="testo-msg">questo è un messaggio</p>
+            <p class="ora-msg">17:30</p>
+          </div>
+        </div>
+
+        <div class="msg-structure">
+          <div class="msg-row user flex">
+            <div class="msg user-msg">
+              <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+              <p class="testo-msg">questo è un messaggio</p>
+              <p class="ora-msg">17:30</p>
+            </div>
+          </div>
+        </div>
+        <div class="msg-structure">
+          <div class="msg-row cpu  flex">
+            <div class="msg cpu-msg">
+              <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+              <p class="testo-msg">questo è un messaggio</p>
+              <p class="ora-msg">17:30</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-chat" data-contatto="3">
+        <div class="msg-row flex">
+          <div class="msg user-msg">
+            <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+            <p class="testo-msg">questo è un messaggio</p>
+            <p class="ora-msg">17:30</p>
+          </div>
+        </div>
+        <div class="msg-row flex">
+          <div class="msg cpu-msg">
+            <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+            <p class="testo-msg">questo è un messaggio</p>
+            <p class="ora-msg">17:30</p>
+          </div>
+        </div>
+
+        <div class="msg-structure">
+          <div class="msg-row user flex">
+            <div class="msg user-msg">
+              <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+              <p class="testo-msg">questo è un messaggio</p>
+              <p class="ora-msg">17:30</p>
+            </div>
+          </div>
+        </div>
+        <div class="msg-structure">
+          <div class="msg-row cpu  flex">
+            <div class="msg cpu-msg">
+              <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+              <p class="testo-msg">questo è un messaggio</p>
+              <p class="ora-msg">17:30</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-chat" data-contatto="4">
+        <div class="msg-row flex">
+          <div class="msg user-msg">
+            <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+            <p class="testo-msg">questo è un messaggio</p>
+            <p class="ora-msg">17:30</p>
+          </div>
+        </div>
+        <div class="msg-row flex">
+          <div class="msg cpu-msg">
+            <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+            <p class="testo-msg">questo è un messaggio</p>
+            <p class="ora-msg">17:30</p>
+          </div>
+        </div>
+
+        <div class="msg-structure">
+          <div class="msg-row user flex">
+            <div class="msg user-msg">
+              <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+              <p class="testo-msg">questo è un messaggio</p>
+              <p class="ora-msg">17:30</p>
+            </div>
+          </div>
+        </div>
+        <div class="msg-structure">
+          <div class="msg-row cpu  flex">
+            <div class="msg cpu-msg">
+              <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+              <p class="testo-msg">questo è un messaggio</p>
+              <p class="ora-msg">17:30</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-chat" data-contatto="5">
+        <div class="msg-row flex">
+          <div class="msg user-msg">
+            <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+            <p class="testo-msg">questo è un messaggio</p>
+            <p class="ora-msg">17:30</p>
+          </div>
+        </div>
+        <div class="msg-row flex">
+          <div class="msg cpu-msg">
+            <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+            <p class="testo-msg">questo è un messaggio</p>
+            <p class="ora-msg">17:30</p>
+          </div>
+        </div>
+
+        <div class="msg-structure">
+          <div class="msg-row user flex">
+            <div class="msg user-msg">
+              <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+              <p class="testo-msg">questo è un messaggio</p>
+              <p class="ora-msg">17:30</p>
+            </div>
+          </div>
+        </div>
+        <div class="msg-structure">
+          <div class="msg-row cpu  flex">
+            <div class="msg cpu-msg">
+              <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+              <p class="testo-msg">questo è un messaggio</p>
+              <p class="ora-msg">17:30</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-chat" data-contatto="6">
+        <div class="msg-row flex">
+          <div class="msg user-msg">
+            <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+            <p class="testo-msg">questo è un messaggio</p>
+            <p class="ora-msg">17:30</p>
+          </div>
+        </div>
+        <div class="msg-row flex">
+          <div class="msg cpu-msg">
+            <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+            <p class="testo-msg">questo è un messaggio</p>
+            <p class="ora-msg">17:30</p>
+          </div>
+        </div>
+
+        <div class="msg-structure">
+          <div class="msg-row user flex">
+            <div class="msg user-msg">
+              <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+              <p class="testo-msg">questo è un messaggio</p>
+              <p class="ora-msg">17:30</p>
+            </div>
+          </div>
+        </div>
+        <div class="msg-structure">
+          <div class="msg-row cpu  flex">
+            <div class="msg cpu-msg">
+              <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+              <p class="testo-msg">questo è un messaggio</p>
+              <p class="ora-msg">17:30</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-chat" data-contatto="7">
+        <div class="msg-row flex">
+          <div class="msg user-msg">
+            <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+            <p class="testo-msg">questo è un messaggio</p>
+            <p class="ora-msg">17:30</p>
+          </div>
+        </div>
+        <div class="msg-row flex">
+          <div class="msg cpu-msg">
+            <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+            <p class="testo-msg">questo è un messaggio</p>
+            <p class="ora-msg">17:30</p>
+          </div>
+        </div>
+
+        <div class="msg-structure">
+          <div class="msg-row user flex">
+            <div class="msg user-msg">
+              <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+              <p class="testo-msg">questo è un messaggio</p>
+              <p class="ora-msg">17:30</p>
+            </div>
+          </div>
+        </div>
+        <div class="msg-structure">
+          <div class="msg-row cpu  flex">
+            <div class="msg cpu-msg">
+              <p class="utility-msg"><i class="fas fa-angle-down"></i></p>
+              <p class="testo-msg">questo è un messaggio</p>
+              <p class="ora-msg">17:30</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
       <div class="footer-chat">
         <div class="emoticons">
             <a href="#"><i class="far fa-smile"></i></a>
