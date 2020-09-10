@@ -76,13 +76,11 @@ $(document).ready(function() {
     $(".head-chat").eq(indexChat).addClass("active-head");
   })
 
-  $(".utility-msg").click(function() {
+  $(document).on('click', '.utility-msg', function() {
     $(this).siblings('.dropdown').toggle();
-
-  })
-  $(".dropdown").on("click", ".delete",
-    function () {
-      $(this).parents(".messaggio").remove();
+  });
+  $(document).on('click', '.dropdown .delete', function() {
+    $(this).parents(".messaggio").remove();
   });
 
 
