@@ -3,7 +3,7 @@ $(document).ready(function() {
   $("#msg-input").keypress(function(e) {
     if (e.which == 13) {
       var valoreInserito = $(this).val();
-      var messaggioInterno = $(".msg-structure .user").clone();
+      var messaggioInterno = $(".active .msg-structure .user").clone();
       var date = new Date();
       var hours = date.getHours();
       var minutes = date.getMinutes();
@@ -16,7 +16,7 @@ $(document).ready(function() {
       }
       setTimeout(function () {
         var valoreInserito = "OK";
-        var messaggioInterno = $(".msg-structure .cpu").clone();
+        var messaggioInterno = $(".active .msg-structure .cpu").clone();
         var date = new Date();
         var hours = date.getHours();
         var minutes = date.getMinutes();
@@ -36,7 +36,7 @@ $(document).ready(function() {
       messaggioInviato()
       setTimeout(function () {
         var valoreInserito = "OK";
-        var messaggioInterno = $(".msg-structure .cpu").clone();
+        var messaggioInterno = $(".active .msg-structure .cpu").clone();
         var date = new Date();
         var hours = date.getHours();
         var minutes = date.getMinutes();
@@ -83,7 +83,7 @@ $(document).ready(function() {
 
 function messaggioInviato() {
   var valoreInserito = $("#msg-input").val();
-  var messaggioInterno = $(".msg-structure .user").clone();
+  var messaggioInterno = $(".active .msg-structure .user").clone();
   var date = new Date();
   var hours = date.getHours();
   var minutes = date.getMinutes();
