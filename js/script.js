@@ -77,7 +77,7 @@ $(document).ready(function() {
   })
 
   $(document).on('click', '.utility-msg', function() {
-    $(this).siblings('.dropdown').toggle();
+    $(this).siblings('.dropdown').toggle(80);
   });
   $(document).on('click', '.dropdown .delete', function() {
     $(this).parents(".messaggio").remove();
