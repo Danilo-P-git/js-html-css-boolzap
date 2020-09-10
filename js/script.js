@@ -11,7 +11,7 @@ $(document).ready(function() {
       if (valoreInserito !="") {
         messaggioInterno.find(".testo-msg").text(valoreInserito);
         messaggioInterno.find(".ora-msg").text(time);
-        $(".main-chat").append(messaggioInterno);
+        $(".active").append(messaggioInterno);
         $(this).val("");
       }
       setTimeout(function () {
@@ -24,7 +24,7 @@ $(document).ready(function() {
         if (valoreInserito !="") {
           messaggioInterno.find(".testo-msg").text(valoreInserito);
             messaggioInterno.find(".ora-msg").text(time);
-          $(".main-chat").append(messaggioInterno);
+          $(".active").append(messaggioInterno);
           $("#msg-input").val("");
         };
       }, 2000);
@@ -44,7 +44,7 @@ $(document).ready(function() {
         if (valoreInserito !="") {
           messaggioInterno.find(".testo-msg").text(valoreInserito);
             messaggioInterno.find(".ora-msg").text(time);
-          $(".main-chat").append(messaggioInterno);
+          $(".active").append(messaggioInterno);
           $("#msg-input").val("");
         };
       }, 2000);
@@ -90,7 +90,7 @@ function messaggioInviato() {
   if (valoreInserito !="") {
     messaggioInterno.find(".testo-msg").text(valoreInserito);
       messaggioInterno.find(".ora-msg").text(time);
-    $(".main-chat").append(messaggioInterno);
+    $(".active").append(messaggioInterno);
     $("#msg-input").val("");
   };
 }
