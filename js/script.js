@@ -87,7 +87,7 @@ function messaggioInviato() {
     $("#msg-input").val("");
   };
 }
-
+// funzione per prendere l'orario del pc
 function time() {
   var date = new Date();
   var hours = date.getHours();
@@ -99,7 +99,7 @@ function time() {
   return time;
 }
 
-
+// funzione per la risposta che modifica automaticamente l'orario nell'ultimo accesso e nella prewiew di chat
 function reply() {
 var statusAccesso = $(".active-head .name p").html();
 $(".active-head .name p").text("Sta scrivendo..");
