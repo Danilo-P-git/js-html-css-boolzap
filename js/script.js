@@ -70,7 +70,9 @@ var risposte = [
   $(document).on('click', '.dropdown .delete', function() {
     $(this).parents(".messaggio").remove();
   });
-
+  $(document).on('click', '.impostazioni-dropdown', function() {
+    $('.impostazioni').toggle(80);
+  });
 
 // funzione per inviare un messaggio
 function messaggioInviato() {
