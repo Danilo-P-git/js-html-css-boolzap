@@ -70,6 +70,7 @@ var risposte = [
   $(document).on('click', '.dropdown .delete', function() {
     $(this).parents(".messaggio").remove();
   });
+  // funzione per il dropdown in alto a destra
   $(document).on('click', '.impostazioni-dropdown', function() {
     $('.impostazioni').toggle(80);
   });
@@ -121,6 +122,7 @@ setTimeout(function () {
   };
 }, 2000);
 }
+// Funzione di scroll
 function automaticScroll() {
 var scroll = $(".main-chat");
 scroll.scrollTop(1000);

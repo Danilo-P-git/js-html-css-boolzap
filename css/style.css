@@ -228,6 +228,8 @@ list-style: none;
 .utility ul li:hover {
   color: #555;
 }
+
+/* Main Chat  */
 .main-chat {
   width: 100%;
   height: calc(100% - 145px);
@@ -374,3 +376,4 @@ width: 120px;
   padding-top: 10px;
 
 }
+/* Main Chat  */
